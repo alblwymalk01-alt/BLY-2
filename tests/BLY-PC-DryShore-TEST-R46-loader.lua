@@ -105,6 +105,7 @@ if kind=="Water" and not confirmed and consumeOutcome=="no_increase" then
 end
 ]==],"no_swim_retry")
 replaceOnce("BLY-PC-SMART-NAV-TEST-R44-20261123","BLY-PC-DRY-SHORE-TEST-R46-20261124","version")
+replaceOnce("BLY-PC-SMART-NAV-TEST-R44-20261123","BLY-PC-DRY-SHORE-TEST-R46-20261124","diagnostics_version")
 assert(not source:find("nudgeIntoWater(",1,true),"BLY R46: بقيت محاولة دخول الماء")
 local run,err=loadstring(source)
 assert(run,"BLY R46: خطأ في تحميل النسخة: "..tostring(err))
